@@ -1,0 +1,86 @@
+/* brand colors */
+:root {
+    --bg-color: rgb(44, 29, 52);
+    --code-color: rgb(234, 131, 227);
+    --bg-radiant: linear-gradient( rgba(11, 1, 11, 0.3) 0%,
+    rgba(225, 115, 231, 0.6) 100%);
+    --font-color: rgb(232, 96, 232);
+}
+
+/* background color and font settings */
+/* setting as flex to make footer align to bottom */
+body {
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: var(--font-color);
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 45px;
+}
+
+/* the text right after the header */
+#instructions {
+    text-align: center;
+    margin: 0 15%;
+}
+
+/* settings for the cheatsheet cards */
+.card {
+    border: 2px dashed white;
+    padding: 15px;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    text-wrap: wrap;
+    border-radius: 5px;
+    background-color: var(--code-color);
+    background-image: var(--bg-radiant);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+/* set flex grid */
+.flexTable {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+
+
+/* Footer styling */
+footer {
+    height: 50px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer h3 {
+    font-size: 30px;
+}
+
+
